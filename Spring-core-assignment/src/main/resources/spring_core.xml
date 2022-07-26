@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<bean name="address" class="Que1.Address">
+		<property name="street" value="BT Kawade"></property>
+		<property name="city" value="Pune"></property>
+		<property name="state" value="Maharashtra"></property>
+		<property name="zip" value="411014"></property>
+		<property name="country" value="India"></property>
+	
+	</bean>
+
+	<bean name="customer" class="Que1.Customer">  
+		<property name="customerId" value = "143">  </property>  
+		<property name="customerName"  value = "Dhiraj">  </property>
+		<property name="customerContact"  value = "7030703497">  </property>
+		<property name="customerAddress" ref = "address">  </property> 
+	</bean> 
+
+	<bean name="customer1" class="Que1.Customer">  
+		<constructor-arg value ="123">  </constructor-arg>  
+		<constructor-arg value = "Ram">  </constructor-arg>
+		<constructor-arg value = "7410770075">  </constructor-arg>
+	</bean>	
+
+
+</beans>

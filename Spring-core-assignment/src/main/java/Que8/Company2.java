@@ -1,0 +1,23 @@
+package Que8;
+
+
+public class Company2 {
+
+	@PostConstruct
+	public void init() throws Exception
+    {
+        System.out.println(
+            "Bean Company has been "
+            + "instantiated and I'm "
+            + "the init() method");
+    }
+ 
+   @PreDestroy
+    public void destroy() throws Exception
+    {
+        System.out.println(
+            "Container has been closed "
+            + "and I'm the destroy() method");
+    }
+
+}

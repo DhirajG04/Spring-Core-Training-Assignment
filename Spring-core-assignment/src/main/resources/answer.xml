@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+https://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+<bean id = "question" class="Que2.Question">
+<!-- <constructor-arg name="questionId" value="10"/>
+	<constructor-arg name="question" value="What is spring core"/>
+	<constructor-arg>
+	 	<list>
+	        <value>Spring core is a Framework. </value>  
+	        <value>Spring is one type of a Season</value>  
+	   </list>
+	</constructor-arg>
+ -->		
+	<property name = "questionId" value="10"></property>
+	<property name = "question" value="What is java?"></property>
+	<property name = "answersInList">
+         <list>
+            <value>Programming Language</value>
+            <value>Based on Oops</value>
+         </list>
+      </property>
+	
+
+</bean>
+<bean id = "question1" class="Que2.Question">
+ <!-- 		<constructor-arg  value = "11" />
+        <constructor-arg  value = "What is Spring Mavan?" />
+   	    <constructor-arg>
+	    	<set>
+	      	  <value>It is project Build Tool. </value>  
+	       	  <value>It help programmer to get project ready environment.</value>  
+	    	</set>
+    	</constructor-arg>
+ -->    	
+    	<property name = "questionId" value="11"></property>
+	<property name = "question" value="What are java features?"></property>
+	<property name = "answersInSet">
+         <set>
+            <value>Robust</value>
+            <value>Simple</value>
+            <value>Portable</value>
+         </set>
+      </property>
+</bean>
+<bean id = "question2" class="Que2.Question">
+		<property name = "questionId"  value = "12" ></property>
+        <property name = "question" value = "What is Spring ?" />
+		<property name = "answerInMap">
+		    <map>
+		        <entry key="1" value="Spring is a Framework" ></entry >  
+		        <entry key="2" value="Spring is a Season" ></entry >  
+		    </map>
+		</property>
+
+</bean>
+
+
+
+
+</beans>
